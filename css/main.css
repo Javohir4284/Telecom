@@ -216,6 +216,7 @@
 
   .customer #slider-container #slider .slide {
     margin: auto 10px !important;
+    width: 255px !important;
   }
 
   .customer .slide > p {
@@ -562,7 +563,7 @@ body {
   border: 2px solid #8CC5F9;
   bottom: 30px;
   position: relative;
-  width: 380px !important;
+  width: 380px;
   height: 237.5px;
   margin: auto 30px;
   background-color: white;
