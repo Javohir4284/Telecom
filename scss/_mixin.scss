@@ -1,0 +1,14 @@
+@mixin mainButton {
+    width: 240px;
+    height: 56px;
+    background: $primaryColor;
+    border-radius: 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    margin-top: 80px;    
+}

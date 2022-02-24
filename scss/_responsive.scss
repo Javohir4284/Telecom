@@ -1,0 +1,263 @@
+@media only screen and (max-width: 1200px){
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding: 0 !important;
+    }
+
+    .navbar-brand{
+        margin-left: 0 !important;
+    }
+
+    .provide-right{
+        padding-left: 0 !important;
+    }
+
+    .contact__title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .navbar form{
+        margin-left: 65px;
+    }
+
+    .main{
+        margin-top: 120px !important;
+        display: block;
+        flex-direction: column-reverse;
+
+        &-left, &-right{
+            margin-top: 30px;
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+    .main-left__button{
+        margin-top: 40px;
+    }
+
+    .provide{
+
+        &-left{
+            width: 100% !important;
+            text-align: center;
+            &__image{
+                width: auto !important;
+            }
+        }
+
+        &-right{
+            margin-top: 20px;
+        }
+    }
+
+    .product {
+        &__text{
+            width: 100% !important;
+        }
+
+        &-card{
+            width: 48% !important;
+        }
+    }
+    
+    .together__text,
+    .customer__text{
+        width: 100% !important;
+    }
+
+    .customer .carousel-item{
+        width: 60% !important;
+    }
+    .contact{
+        position: static !important;
+        display: block !important;
+        transform: translate(0, 0) !important;
+        width: 100% !important;
+        padding: 30px 20px !important;
+        margin-top: 100px;
+
+        &-info{
+            width: 100% !important;
+        }
+
+        button{
+            margin-top: 30px !important;
+        }
+    }
+
+    .footer{
+        
+        .row{
+            padding-top: 30px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main-left__title{
+        font-size: 36px !important;
+    }
+
+    .result{
+        height: auto !important;
+        padding: 20px;
+
+        &-info{
+            border-right: none !important;
+            text-align: center;
+        }
+    }
+
+    .primary__title{
+        font-size: 24px !important;
+        line-height: 30px !important;
+    }
+    
+    .provide-left__image{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .main-left__title{
+        font-size: 26px !important;
+    }
+
+    .main-left__text{
+        font-size: 14px !important;
+    }
+
+    .result{
+        width: 90%;
+        margin: 80px auto !important;
+    }
+
+    .product-card{
+        width: 95% !important;
+        margin: 20px auto;
+        margin-top: 20px !important;
+    }
+
+    .together{
+        margin-top: 50px !important;
+
+        &-info{
+            margin-bottom: 50px !important;
+        }
+
+        &-icons{
+            flex-wrap: wrap;
+            justify-content:flex-start !important;
+
+            div{
+                width: 120px !important;
+                margin: 0 10px !important;
+            }
+        }
+    }
+
+    .customer #slider-container #slider .slide{
+        padding: 20px !important;
+    }
+
+    .contact{
+        width: 95% !important;
+        margin: 100px auto;
+        padding: 15px !important;
+
+        &-info__text{
+            margin-left: 10px !important;
+        }
+    }
+    .footer {
+        padding-bottom: 40px !important;
+        
+        &__text{
+            width: 100% !important;
+        }
+
+        .row .col-lg-2{
+            width: 33% !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .navbar{
+        &-brand{
+        width: 50% ;
+        }
+
+        .navbar-toggler{
+            border-color: white ;
+        }
+
+        &-toggler:focus{
+            box-shadow: none;
+        }
+    }
+
+    .main-left__title{
+        font-size: 22px !important;
+    }
+
+    .main-left__text{
+        font-size: 12px !important;
+        line-height: 15px;
+    }
+
+    .main-left__button{
+        margin-top: 40px !important;
+        width: 60% !important;
+    }
+
+    .result-info__text h3{
+        font-size: 18px !important;
+    }
+
+    .primary__title{
+        font-size: 20px !important;
+    }
+
+    .provide{
+        padding-bottom: 20px !important;
+    }
+
+    .product-card__text{
+        font-size: 12px !important;
+    }
+
+    .contact-info{
+        display: block !important;
+
+        &__image{
+            text-align: center;
+        }
+
+        &__text{
+            h1{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .customer #slider-container #slider .slide{
+        margin: auto 10px !important;
+    }
+
+    .customer .slide > p{
+        line-height: 20px !important;
+    }
+    
+
+    .footer {
+        .contact button{
+            width: 140px;
+            height: 36px;
+            border-radius: 40px;
+            line-height: 15px;
+        }
+    }
+}

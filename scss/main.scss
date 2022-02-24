@@ -1,0 +1,515 @@
+@import 'color';
+@import 'mixin';
+@import 'responsive';
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.primary__title{
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 47px;
+    color: $resultColor;
+}
+
+.primary__text{
+    font-size: 15px;
+    line-height: 30px;
+    color: $textColor;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    background-color: #fff;
+    z-index: 5;
+
+    &-brand{
+        margin-left: -65px;
+    }
+
+    ul{
+        margin-left: 50px !important;
+        li{
+
+            margin: 15px;
+            a{
+                font-size: 15px;
+                line-height: 19px;
+                color: $navLinkColor !important;
+            }
+        }
+
+    }
+
+    &-form{
+        
+        select{
+            border: none;
+            outline: none;
+            font-size: 15px;
+            line-height: 25px;
+            color: $selectColor ;
+        }
+    }
+}
+
+// Main Styles
+.main{
+    align-items: center;
+    margin-top: 190px;
+
+    &-left{
+        position: relative;
+        width: 50%;
+
+        &__title{
+            font-weight: bold;
+            font-size: 46px;
+            line-height: 60px;
+            color: $primaryColor ;
+        }
+
+        &__text{
+            font-size: 20px;
+            line-height: 30px;
+            color: $textColor;
+        }
+
+        &__button{
+           @include mainButton(); 
+        }
+
+        &-shadow{
+            position: absolute;
+            top: 280px;
+            left: 30px;
+            width: 200px;
+            height: 56px;
+            background: $buttonShadow;
+            filter: blur(54px);
+            border-radius: 10px;
+            z-index: -1;
+        }
+    }
+
+    &-right{
+        width: 50%;
+
+        &__image{
+            width: 100%;
+        }
+    }
+}
+
+// Result styles
+.result{
+    margin-top: 170px;
+    height: 190px;
+    align-items: center;
+    box-shadow: 0px 20px 30px 10px $buttonShadow;
+    margin-bottom: 90px;
+    .row{
+        width: 100%;
+        display: flex;
+        justify-content: space-between !important;
+
+    }
+
+    &-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 2px solid #EEEFF2;
+        height: 120px;
+
+        &__image{
+            width: 50%;
+            text-align: center;
+
+        }
+
+        &__text{
+            width: 50%;
+            
+            h3{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 25px;
+                color: $resultColor;
+            }
+
+            p{
+                font-size: 19px;
+                line-height: 25px;
+                color: $textColor;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-info:last-child{
+        border-right: none;
+    }
+}
+
+.provide{
+    padding-bottom: 65px;
+
+    .row{
+        margin: 0 auto;
+    }
+
+    &-left{
+        width: 50%;
+
+        &__image{
+            width: 100%;
+        }
+    }
+
+    &-right{
+        padding-left: 142px;
+    }
+
+    &__title{
+        color: $primaryColor;
+    }
+
+    &__text{
+        margin-top: 24px;
+    }
+
+    &__list{
+        padding-left: 0;
+        margin: 20px 0;
+
+        li{
+            list-style: none;
+            margin: 15px 0;
+
+            i{
+                color: $primaryColor;
+                margin-right: 10px;
+            }
+
+            span{
+                display: inline-block;
+                font-size: 14px;
+                color: $textColor;
+            }
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 30px;
+        color: $primaryColor;
+        margin: 28px;
+    }
+}
+
+// Product styles
+.product{
+    padding-top: 75px;
+    text-align:center;
+    background-color: $productColor;
+
+    &__text{
+        width: 67%;
+        margin: 20px auto;  
+    }
+
+    .row{
+        justify-content: space-between;
+    }
+
+    &-card{
+        margin-top: 50px;
+        padding: 20px;
+        padding-left: 34px !important;
+        width: 32%;
+        text-align: left;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
+
+        &__title{
+            font-weight: 500;
+            font-size: 17px;
+            margin-top: 20px;
+            line-height: 30px;
+            color: $navLinkColor;
+        }
+
+        &__text{
+            margin-top: 15px;
+            font-size: 17px;
+            line-height: 30px;
+            color: $navLinkColor;
+        }
+
+        &__button{
+            border: 2px solid $primaryColor;
+            color: $primaryColor;
+            box-sizing: border-box;
+            width: 140px;
+            height: 35px;
+            border-radius: 47px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            margin-top: 45px;
+        }
+    }
+
+}
+
+// Together styles
+.together{
+    text-align: center;
+    margin-top: 140px;
+
+    &-info{
+        margin-bottom: 140px;
+    }
+
+    &__image{
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__text{
+        width: 48%;
+        margin: 12px auto;
+    }
+
+    &-icons{
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+
+        div{
+            width: 17%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Customer styles
+.customer{
+    position: relative;
+    text-align: center;
+    margin-top: 90px;
+    overflow-x: hidden;
+
+    &__text{
+        width: 50%;
+        margin: 22px auto;
+    }
+
+    
+#container {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+  }
+  
+  #slider-container {
+    height: 300px;
+    width: 100vw;  
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  #slider-container .onclick{
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #slider-container .btn {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid $primaryColor;
+    border-top: 8px solid $primaryColor;
+  }
+  
+  #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+  }
+  
+  #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+  }
+  
+  #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  
+  #slider-container #slider .slide {
+    text-align: left;
+    padding: 25px 30px;
+    border: 2px solid $primaryColor;
+    bottom: 30px;
+    position: relative;
+    width: 380px !important;
+    height: 237.5px;
+    margin: auto 30px;
+    background-color: white;
+    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+  }
+
+  .slide > p{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 30px;
+    color: $resultColor;
+  }
+ 
+  .slide-info {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .first-name{
+          margin-left: 30px;
+      }
+  }
+  
+  .slide-info p {
+    font-size: 13px;
+    line-height: 20px;
+    color: $textColor;
+    margin-bottom: 0;
+  }
+
+
+}
+
+// Contact styles
+.contact{
+    position: relative;
+    top: 120px;
+    width: 80%;
+    padding: 40px 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+
+    &-info{
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        &__text{
+            margin-left: 62px;
+        } 
+    }
+    button{
+        margin-top: 0;
+    }
+}
+
+//Footer styles
+
+.footer{
+    background-color: $footerColor;
+    padding-bottom: 95px;
+
+
+    .row{
+        padding-top: 200px;
+    }
+
+    &__text{
+        width: 62%;
+        color: $footerTextColor;
+    }
+
+    &-bottom{
+        color: $footerBottomColor;
+        margin-top: 30px;
+    }
+
+    &-social{
+        margin-top: 25px;
+
+        span{
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+
+            i{
+                color: $primaryColor;
+            }
+        }
+    }
+
+    &-title{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 30px;
+        color: $resultColor;
+    }
+
+    &-list{
+        padding-left: 0;
+        margin-top: 20px;
+
+        li{
+            list-style: none;
+            height: 36px;
+
+            a{
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 30px;
+                color: $textColor;
+            }
+        }
+    }
+}
+
